@@ -11,7 +11,7 @@ const variants = {
   }
 };
 
-const items: string[] = ["About", "Photography", "Contact"];
+const items: string[] = ["Home", "About", "Photography"];
 
 export const Navigation = () => (
   <motion.ul variants={variants}>

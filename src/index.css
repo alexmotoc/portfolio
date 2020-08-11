@@ -1,26 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@900&display=swap');
-
-body {
-  margin: 0;
-  font-family: 'Playfair Display', serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;900&display=swap');
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
-}
-
-body {
-  width: 100vw;
-  height: 100vh;
-  overflow: hidden;
-  padding: 0;
-  margin: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 nav {
@@ -79,8 +61,15 @@ li {
   cursor: pointer;
 }
 
+p {
+  font-family: 'Playfair Display', serif;
+}
+
 .menu-item {
   color: #000;
+  font-family: 'Playfair Display', serif;
+  font-size: 28px;
+  font-weight: 900;
 }
 
 .refresh {
@@ -96,4 +85,43 @@ li {
   justify-content: center;
   align-items: center;
   cursor: pointer;
+}
+
+.collection-container {
+  margin-top: 100px;
+}
+
+.collection-title {
+  text-align: center;
+  font-family: 'Playfair Display', serif;
+}
+
+.hr-medium {
+  border-top: solid #000;
+  width: 100px;
+}
+
+.collection-description {
+  margin-top: 50px;
+}
+
+.collection-image {
+  width: 100%;
+  margin-top: 25px;
+}
+
+.back-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.back-text {
+  font-family: 'Playfair Display', serif;
+  font-weight: bold;
+  color: #000;
+  text-decoration: none;
+  margin-left: 5px;
 }
