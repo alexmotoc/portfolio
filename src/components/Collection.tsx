@@ -3,15 +3,19 @@ import * as React from 'react';
 import Container from '@material-ui/core/Container';
 import KeyboardBackspaceIcon from '@material-ui/icons/KeyboardBackspace';
 
-interface CollectionProps {
+export interface CollectionProps {
     title: string;
     description: string;
+    thumbnail: string;
+    thumbnailSize?: 4 | 8 | 12;
     images: string[]
 };
 
 const BlackLivesMatter: CollectionProps = {
     title: 'Black Lives Matter',
     description: "The Black Lives Matter protests that took place in Leamington Spa in 2020 on June 20th and July 18th. People marched on the streets to fight against racism following George Floyd's death.",
+    thumbnail: 'https://images.unsplash.com/photo-1592687632657-a5513c20565b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2250&q=80',
+    thumbnailSize: 8,
     images: [
         'https://images.unsplash.com/photo-1592686954679-0f3a55e0912c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80',
         'https://images.unsplash.com/photo-1592686954597-02034c0cbc8e?ixlib=rb-1.2.1&auto=format&fit=crop&w=934&q=80',
@@ -28,6 +32,7 @@ const BlackLivesMatter: CollectionProps = {
 const LeamingtonSpa: CollectionProps = {
     title: 'Leamington Spa',
     description: 'The place I called home for my last year of university. This lovely town allowed me to get my first taste into street photography.',
+    thumbnail: 'https://images.unsplash.com/photo-1593715868791-b76b61f25dd4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80',
     images: [
         'https://images.unsplash.com/photo-1595693735777-c5cc6e223283?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80',
         'https://images.unsplash.com/photo-1593715868791-b76b61f25dd4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80',
@@ -46,6 +51,7 @@ const LeamingtonSpa: CollectionProps = {
 const VarsityRugby: CollectionProps = {
     title: 'Varsity Rugby',
     description: "The women's and men's rugby matches between Warwick University and Coventry University at the Butts Park Arena that took place during the 19/20 academic year.",
+    thumbnail: 'https://images.unsplash.com/photo-1582547338246-d3e9552e5a98?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80',
     images: [
         'https://images.unsplash.com/photo-1582546997211-e1d66ede4257?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80',
         'https://images.unsplash.com/photo-1582546996635-dc0640f8eb26?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80',
@@ -68,6 +74,8 @@ const VarsityRugby: CollectionProps = {
 const Food: CollectionProps = {
     title: 'Food',
     description: 'Despite many finding it time consuming, cooking is an extremely rewarding activity. These are the rare ocassionas when I was patient enough to photograph the end product and not dive straight in.',
+    thumbnail: 'https://images.unsplash.com/photo-1587394214315-85d8f8d6bf5c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2250&q=80',
+    thumbnailSize: 8,
     images: [
         'https://images.unsplash.com/photo-1587841424505-4205a6e73ef7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80',
         'https://images.unsplash.com/photo-1587389302738-ba24966817d4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80',
@@ -79,6 +87,7 @@ const Food: CollectionProps = {
 const UniversityOfWarwick: CollectionProps = {
     title: 'University of Warwick',
     description: 'A campus university might feel segregated from the rest of the world, but that does not make it any less pretty. This is my take on some of the iconic places that everyone who studied here should recognise.',
+    thumbnail: 'https://images.unsplash.com/photo-1568294482044-c15fbef47118?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=975&q=80',
     images: [
         'https://images.unsplash.com/photo-1581100923924-7e4e234392ba?ixlib=rb-1.2.1&auto=format&fit=crop&w=934&q=80',
         'https://images.unsplash.com/photo-1579114930376-c25fea4aa9e9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80',
@@ -92,6 +101,7 @@ const UniversityOfWarwick: CollectionProps = {
 const Copenhagen: CollectionProps = {
     title: 'Copenhagen',
     description: 'Colourful buildings and lively Christmas markets. While the cold, desaturated tones might not do them enough justice, you will have to take my word for it.',
+    thumbnail: 'https://images.unsplash.com/photo-1575830137428-74cc35757357?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80',
     images: [
         'https://images.unsplash.com/photo-1575830137428-74cc35757357?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80',
         'https://images.unsplash.com/photo-1575827845843-fc14605d2794?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80',
@@ -106,6 +116,7 @@ const Copenhagen: CollectionProps = {
 const Covid19: CollectionProps = {
     title: 'Covid-19 Pandemic',
     description: 'A time when every place seemed like a ghost town and even the busiest high streets were completely empty in the middle of the day. The silence presented the perfect opportunity to reflect.',
+    thumbnail: 'https://images.unsplash.com/photo-1585166169032-551d4ea843fa?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80',
     images: [
         'https://images.unsplash.com/photo-1589062119833-c2dbba63b3e0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80',
         'https://images.unsplash.com/photo-1586461116078-e2edf63f6ace?ixlib=rb-1.2.1&auto=format&fit=crop&w=934&q=80',
@@ -117,7 +128,7 @@ const Covid19: CollectionProps = {
 };
 
 export const Collections: CollectionProps[] = [
-    BlackLivesMatter, LeamingtonSpa, VarsityRugby, Food, UniversityOfWarwick, Covid19, Copenhagen
+    BlackLivesMatter, LeamingtonSpa, Covid19, VarsityRugby, UniversityOfWarwick, Copenhagen, Food
 ];
 
 export const Collection: React.FunctionComponent<CollectionProps> = (props: CollectionProps) => {
@@ -127,7 +138,7 @@ export const Collection: React.FunctionComponent<CollectionProps> = (props: Coll
             <hr className="hr-medium"/>
             <p className="collection-description">{props.description}</p>
             {props.images.map(image => (
-                <img key={image} className="collection-image" src={image} />
+                <img key={image} className="collection-image" src={image} alt={props.title} />
             ))}
             <div className="back-container">
                 <KeyboardBackspaceIcon/>
