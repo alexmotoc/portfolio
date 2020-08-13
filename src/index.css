@@ -138,13 +138,20 @@ p {
 }
 
 .image-tile {
-  height: 400px;
+  height: 450px;
   padding: 5px !important;
 }
 
 .image-tile:hover {
   cursor: pointer;
-  opacity: 0.75;
+}
+
+.collection-thumbnail:hover {
+  opacity: 0.6;
+}
+
+.MuiGridListTile-tile:hover {
+  background: #000;
 }
 
 .collection-thumbnail-title { 

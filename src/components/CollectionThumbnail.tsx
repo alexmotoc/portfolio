@@ -25,21 +25,19 @@ export const CollectionThumbnail: React.FunctionComponent<CollectionProps> = (pr
     }
 
     return (
-        <React.Fragment>
-            <GridListTile 
-                className="image-tile"
-                onClick={() => handleThumbnailClick(`${match.path}/${props.title.toLowerCase().split(' ').join('-')}`)} 
-                onMouseEnter={showCollectionTitle} 
-                onMouseLeave={hideCollectionTitle} 
-                key={props.title} 
-                component={Grid} 
-                item 
-                md={props.thumbnailSize || 4} 
-                xs={12} 
-                cols={props.thumbnailSize ? props.thumbnailSize / 4 : 1}>
-                    <img className="collection-thumbnail" src={props.thumbnail} alt={props.title} />
-                    {showTitle && <span className="collection-thumbnail-title">{props.title}</span>}
-            </GridListTile>
-        </React.Fragment>
+        <GridListTile 
+            className="image-tile"
+            onClick={() => handleThumbnailClick(`${match.path}/${props.title.toLowerCase().split(' ').join('-')}`)} 
+            onMouseEnter={showCollectionTitle} 
+            onMouseLeave={hideCollectionTitle} 
+            key={props.title} 
+            component={Grid} 
+            item 
+            md={props.thumbnailSize || 4} 
+            xs={12} 
+            cols={props.thumbnailSize ? props.thumbnailSize / 4 : 1}>
+                <img className="collection-thumbnail" src={props.thumbnail} alt={props.title} />
+                {showTitle && <span className="collection-thumbnail-title">{props.title}</span>}
+        </GridListTile>
     );
 }
