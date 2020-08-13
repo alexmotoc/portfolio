@@ -5,10 +5,12 @@ import { Navbar } from "./components/Navbar";
 import { Photography } from "./components/Photography";
 
 import { Collections, Collection } from './components/Collection';
+import { ScrollToTop } from './components/ScrollToTop';
 
 function App() {
   return (
     <Router>
+      <ScrollToTop />
       <Navbar />
       <Switch>
         {Collections.map(item => (
