@@ -1,9 +1,9 @@
 import React from 'react';
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
+import { About } from "./components/About";
 import { Navbar } from "./components/Navbar";
 import { Photography } from "./components/Photography";
-
 import { Collections, Collection } from './components/Collection';
 import { ScrollToTop } from './components/ScrollToTop';
 
@@ -20,6 +20,9 @@ function App() {
         ))}
         <Route exact path="/photography">
             <Photography />
+        </Route>
+        <Route exact path="/about">
+          <About />
         </Route>
       </Switch>
     </Router>

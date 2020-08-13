@@ -22,6 +22,7 @@ const variants = {
 export const MenuItem = ({ item }: { item: string }) => {
   return (
     <motion.li
+      className="navbar-li"
       variants={variants}
       whileHover={{ scale: 1.1 }}
       whileTap={{ scale: 0.95 }}

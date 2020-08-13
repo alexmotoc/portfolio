@@ -133,16 +133,16 @@ export const Collections: CollectionProps[] = [
 
 export const Collection: React.FunctionComponent<CollectionProps> = (props: CollectionProps) => {
     return (
-        <Container className="collection-container" maxWidth="sm">
+        <Container className="portfolio-container" maxWidth="sm">
             <h1 className="collection-title">{props.title}</h1>
             <hr className="hr-medium"/>
-            <p className="collection-description">{props.description}</p>
+            <p>{props.description}</p>
             {props.images.map(image => (
                 <img key={image} className="collection-image" src={image} alt={props.title} />
             ))}
             <div className="back-container">
                 <KeyboardBackspaceIcon/>
-                <a className="back-text" href="/photography">BACK TO PHOTOGRAPHY</a>
+                <a className="link back-text" href="/photography">BACK TO PHOTOGRAPHY</a>
             </div>
         </Container>
     );

@@ -14,7 +14,7 @@ const variants = {
 const items: string[] = ["Home", "About", "Photography"];
 
 export const Navigation = () => (
-  <motion.ul variants={variants}>
+  <motion.ul className="navbar-ul" variants={variants}>
     {items.map((item, idx) => (
       <MenuItem item={item} key={idx} />
     ))}

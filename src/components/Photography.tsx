@@ -12,8 +12,9 @@ import GridList from '@material-ui/core/GridList';
 export const Photography: React.FunctionComponent<{}> = () => {
     return (
         <React.Fragment>
-            <Container className="photography-container" maxWidth="md">
-                <h1 className="photography-title">Photography</h1>
+            <Container className="portfolio-container" maxWidth="md">
+                <h1>Photography</h1>
+                <hr className="hr-medium"/>
                 <GridList component={Grid} spacing={0} container cellHeight={400} cols={3}>
                     {Collections.map(item => (
                         <CollectionThumbnail key={item.title} {...item} />
