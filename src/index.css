@@ -131,6 +131,12 @@ p {
   margin-bottom: 100px;
 }
 
+.photography-title { 
+  text-align: center;
+  font-family: 'Playfair Display', serif;
+  margin-bottom: 75px;
+}
+
 .image-tile {
   height: 400px;
   padding: 5px !important;
