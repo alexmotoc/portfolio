@@ -2,11 +2,18 @@ import * as React from 'react';
 
 import Container from '@material-ui/core/Container';
 import Grid from '@material-ui/core/Grid';
+import EmailIcon from '@material-ui/icons/Email';
 import LocationOnIcon from '@material-ui/icons/LocationOn';
 
 export const About: React.FunctionComponent<{}> = () => {
+    const socialMedia = [
+        { name: 'Instagram', url: 'https://www.instagram.com/alexmotoc/' }, 
+        { name: 'GitHub', url: 'https://github.com/alexmotoc' },
+        { name: 'LinkedIn', url: 'https://www.linkedin.com/in/alex-motoc/' }
+    ];
+
     return (
-        <Container className="portfolio-container" maxWidth="md">
+        <Container className="portfolio-container about-container" maxWidth="md">
             <h1>About Me</h1>
             <hr className="hr-medium"/>
             <Grid className="about-me-container" container spacing={5}>
@@ -40,6 +47,16 @@ export const About: React.FunctionComponent<{}> = () => {
                     <div className="location-container">
                         <LocationOnIcon className="location-icon"/>
                         <p>London, UK</p>
+                    </div>
+                </Grid>
+                <Grid className="contact-container" item md={12} xs={12}>
+                    <h2>Connect</h2>
+                    <a href="mailto:alexmotoc97@gmail.com"><EmailIcon className="email-icon"/></a>
+                    <hr className="social-media-separator"/>
+                    <div>
+                        {socialMedia.map(item => (
+                            <a href={item.url}><img className="social-media-icon" src={`social-media/${item.name.toLowerCase()}-icon.svg`} alt={`${item.name} Icon`} /></a>
+                        ))}
                     </div>
                 </Grid>
             </Grid>
