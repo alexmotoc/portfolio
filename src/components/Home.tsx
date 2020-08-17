@@ -8,7 +8,7 @@ export const Home: React.FunctionComponent<{}> = () => {
         <main className="home">
             <Container className="portfolio-container" maxWidth="md">
                 <h1 className="home-title">
-                    Hi, I'm Alex <span aria-label="Waving Hand">👋</span>
+                    Hi, I'm Alex <span role="img" aria-label="Waving Hand">👋</span>
                 </h1>
                 <Typed
                     className="home-description"

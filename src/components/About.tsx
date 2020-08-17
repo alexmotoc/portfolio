@@ -18,7 +18,7 @@ export const About: React.FunctionComponent<{}> = () => {
             <hr className="hr-medium"/>
             <Grid className="about-me-container" container spacing={5}>
                 <Grid className="profile-picture-container" item md={6} xs={12}>
-                    <img className="profile-picture" src="profile-picture.jpg" alt="Profile Picture"/>
+                    <img className="profile-picture" src="profile-picture.jpg" alt="Profile"/>
                 </Grid>
                 <Grid item md={6} xs={12}>
                     <p>I am an <strong>MEng Computer Science</strong> graduate from <strong>University of Warwick</strong> who currently works as a <strong>software engineer</strong>.</p>
