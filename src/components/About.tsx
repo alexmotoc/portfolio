@@ -55,7 +55,7 @@ export const About: React.FunctionComponent<{}> = () => {
                     <hr className="social-media-separator"/>
                     <div>
                         {socialMedia.map(item => (
-                            <a href={item.url}><img className="social-media-icon" src={`social-media/${item.name.toLowerCase()}-icon.svg`} alt={`${item.name} Icon`} /></a>
+                            <a key={item.name} href={item.url}><img className="social-media-icon" src={`social-media/${item.name.toLowerCase()}-icon.svg`} alt={`${item.name} Icon`} /></a>
                         ))}
                     </div>
                 </Grid>
