@@ -1,7 +1,6 @@
 import * as React from 'react';
 
 import Container from '@material-ui/core/Container';
-import KeyboardBackspaceIcon from '@material-ui/icons/KeyboardBackspace';
 
 export interface CollectionProps {
     title: string;
@@ -141,8 +140,7 @@ export const Collection: React.FunctionComponent<CollectionProps> = (props: Coll
                 <img key={image} className="collection-image" src={image} alt={props.title} />
             ))}
             <div className="back-container">
-                <KeyboardBackspaceIcon/>
-                <a className="link back-text" href="/photography">BACK TO PHOTOGRAPHY</a>
+                <a className="link" href={process.env.PUBLIC_URL + "/photography"}>← BACK TO PHOTOGRAPHY</a>
             </div>
         </Container>
     );

@@ -15,9 +15,11 @@ nav {
   height: 100%;
   width: 300px;
   position: fixed; 
-  z-index: 1;
   top: 0;
   left: 0;
+  z-index: 0;
+  /* opacity: 0; */
+  transition: z-index 1s step-end, opacity 0.5s linear;
 }
 
 .background {
@@ -127,10 +129,6 @@ h2 {
   text-decoration: none;
 }
 
-.back-text {
-  margin-left: 5px;
-}
-
 .image-tile {
   height: 450px;
   padding: 5px !important;
@@ -231,4 +229,10 @@ h2 {
 
 .home-description {
   font-size: 1.5em;
+}
+
+.sidebar-open {
+  z-index: 1;
+  opacity: 1;
+  transition: z-index 0.5s step-start, opacity 0.5s linear;
 }

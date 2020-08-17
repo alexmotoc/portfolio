@@ -1,4 +1,5 @@
 import * as React from "react";
+import clsx from 'clsx';
 import { useRef } from "react";
 import { motion, useCycle } from "framer-motion";
 
@@ -33,6 +34,7 @@ export const Navbar = () => {
 
   return (
     <motion.nav
+      className={clsx({"sidebar-open": isOpen})}
       initial={false}
       animate={isOpen ? "open" : "closed"}
       custom={height}

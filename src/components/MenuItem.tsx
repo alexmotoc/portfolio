@@ -21,6 +21,8 @@ const variants = {
 };
 
 export const MenuItem = ({ item }: { item: NavigationItem }) => {
+  const url: string = item.url || `/${item.name.toLowerCase()}`;
+  
   return (
     <li className="navbar-li">
       <motion.a
@@ -28,7 +30,7 @@ export const MenuItem = ({ item }: { item: NavigationItem }) => {
         variants={variants}
         whileHover={{ scale: 1.1 }}
         whileTap={{ scale: 0.95 }} 
-        href={item.url || `/${item.name.toLowerCase()}`}>{item.name.toUpperCase()}
+        href={process.env.PUBLIC_URL + url}>{item.name.toUpperCase()}
         </motion.a>
     </li>
   );
