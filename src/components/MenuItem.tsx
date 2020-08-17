@@ -21,13 +21,14 @@ const variants = {
 
 export const MenuItem = ({ item }: { item: string }) => {
   return (
-    <motion.li
-      className="navbar-li"
-      variants={variants}
-      whileHover={{ scale: 1.1 }}
-      whileTap={{ scale: 0.95 }}
-    >
-    <Link className="menu-item" to={`/${item.toLowerCase()}`}>{item.toUpperCase()}</Link>
-    </motion.li>
+    <li className="navbar-li">
+      <motion.a
+        className="menu-item"
+        variants={variants}
+        whileHover={{ scale: 1.1 }}
+        whileTap={{ scale: 0.95 }} 
+        href={`/${item.toLowerCase()}`}>{item.toUpperCase()}
+        </motion.a>
+    </li>
   );
 };
