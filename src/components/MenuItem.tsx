@@ -1,6 +1,7 @@
 import * as React from "react";
-import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
+
+import { NavigationItem } from './Navigation';
 
 const variants = {
   open: {
@@ -19,7 +20,7 @@ const variants = {
   }
 };
 
-export const MenuItem = ({ item }: { item: string }) => {
+export const MenuItem = ({ item }: { item: NavigationItem }) => {
   return (
     <li className="navbar-li">
       <motion.a
@@ -27,7 +28,7 @@ export const MenuItem = ({ item }: { item: string }) => {
         variants={variants}
         whileHover={{ scale: 1.1 }}
         whileTap={{ scale: 0.95 }} 
-        href={`/${item.toLowerCase()}`}>{item.toUpperCase()}
+        href={item.url || `/${item.name.toLowerCase()}`}>{item.name.toUpperCase()}
         </motion.a>
     </li>
   );

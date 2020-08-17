@@ -3,6 +3,7 @@
 
 body {
   font-family: 'Playfair Display', serif;
+  margin: 0px !important;
 }
 
 code {
@@ -213,4 +214,21 @@ h2 {
 .social-media-icon:hover {
   opacity: 1;
   transition: 1s;
+}
+
+.home {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.home-title { 
+  font-size: 5em;
+  margin-top: 0px !important;
+}
+
+.home-description {
+  font-size: 1.5em;
 }

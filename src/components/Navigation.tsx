@@ -11,7 +11,16 @@ const variants = {
   }
 };
 
-const items: string[] = ["Home", "About", "Photography"];
+export interface NavigationItem {
+  name: string;
+  url?: string;
+};
+
+const items: NavigationItem[] = [
+  { name: "Home", url: '/' },
+  { name: "About" },
+  { name: "Photography" }
+];
 
 export const Navigation = () => (
   <motion.ul className="navbar-ul" variants={variants}>
