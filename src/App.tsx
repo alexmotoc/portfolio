@@ -12,19 +12,21 @@ function App() {
     <Router>
       <ScrollToTop />
       <Navbar />
-      <Switch>
-        {Collections.map(item => (
-          <Route exact key={item.title} path={`/photography/${item.title.toLowerCase().split(' ').join('-')}`}>
-            <Collection {...item}/>
+      <main>
+        <Switch>
+          {Collections.map(item => (
+            <Route exact key={item.title} path={`/photography/${item.title.toLowerCase().split(' ').join('-')}`}>
+              <Collection {...item}/>
+            </Route>
+          ))}
+          <Route exact path="/photography">
+              <Photography />
           </Route>
-        ))}
-        <Route exact path="/photography">
-            <Photography />
-        </Route>
-        <Route exact path="/about">
-          <About />
-        </Route>
-      </Switch>
+          <Route exact path="/about">
+            <About />
+          </Route>
+        </Switch>
+      </main>
     </Router>
   );
 }
