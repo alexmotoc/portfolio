@@ -1,4 +1,5 @@
 import * as React from "react";
+import clsx from 'clsx';
 import { motion } from "framer-motion";
 import { MenuItem } from "./MenuItem";
 
@@ -22,8 +23,12 @@ const items: NavigationItem[] = [
   { name: "Photography" }
 ];
 
-export const Navigation = () => (
-  <motion.ul className="navbar-ul" variants={variants}>
+interface NavigationProps {
+  open: boolean;
+};
+
+export const Navigation = (props: NavigationProps) => (
+  <motion.ul className={clsx("navbar-ul", {"sidebar-open": props.open})} variants={variants}>
     {items.map((item, idx) => (
       <MenuItem item={item} key={idx} />
     ))}
