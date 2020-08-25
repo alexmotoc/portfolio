@@ -107,7 +107,7 @@ export const Awards: CVSectionProps = {
             date: 'March 2018',
             content: [
                 'Took the role of the project manager and collaborated on a team project creating a virtual assistant to assist traders with financial queries',
-                'Assisted with software architecture and designed the user interface/experience. Organised sprints and tasks, planned development priorities and kept track of progress',
+                'Assisted with software architecture and designed the user interface. Organised sprints and tasks, planned development priorities and kept track of progress',
                 'Developed team-working skills and improved flexibility'
             ]
         },
