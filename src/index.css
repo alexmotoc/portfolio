@@ -232,3 +232,15 @@ h2 {
 .sidebar-open {
   visibility: visible;
 }
+
+.cv-section-header {
+  text-align: center;
+}
+
+.cv-date-range {
+  opacity: 0.5;
+}
+
+.no-margin-top {
+  margin-top: 0px !important;
+}
