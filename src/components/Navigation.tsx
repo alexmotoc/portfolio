@@ -20,6 +20,7 @@ export interface NavigationItem {
 const items: NavigationItem[] = [
   { name: "Home", url: '/' },
   { name: "About" },
+  { name: "CV" },
   { name: "Photography" }
 ];
 
