@@ -10,6 +10,18 @@ export interface CollectionProps {
     images: string[]
 };
 
+const London: CollectionProps = {
+    title: 'London',
+    description: 'Exploring the big city life. Paying attention to the people in crowds helps me discover interesting scenes in the streets.',
+    thumbnail: 'https://images.unsplash.com/photo-1600503588578-3f2912e12742?ixlib=rb-1.2.1&auto=format&fit=crop&w=2089&q=80',
+    thumbnailSize: 12,
+    images: [
+        'https://images.unsplash.com/photo-1600503588578-3f2912e12742?ixlib=rb-1.2.1&auto=format&fit=crop&w=2089&q=80',
+        'https://images.unsplash.com/photo-1600367797084-02628e943a08?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80',
+        'https://images.unsplash.com/photo-1600362189809-aad4924fbd6a?ixlib=rb-1.2.1&auto=format&fit=crop&w=934&q=80'
+    ]
+};
+
 const BlackLivesMatter: CollectionProps = {
     title: 'Black Lives Matter',
     description: "The Black Lives Matter protests that took place in Leamington Spa in 2020 on June 20th and July 18th. People marched on the streets to fight against racism following George Floyd's death.",
@@ -127,7 +139,7 @@ const Covid19: CollectionProps = {
 };
 
 export const Collections: CollectionProps[] = [
-    BlackLivesMatter, LeamingtonSpa, Covid19, VarsityRugby, UniversityOfWarwick, Copenhagen, Food
+    London, BlackLivesMatter, LeamingtonSpa, Covid19, VarsityRugby, UniversityOfWarwick, Copenhagen, Food
 ];
 
 export const Collection: React.FunctionComponent<CollectionProps> = (props: CollectionProps) => {
