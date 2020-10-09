@@ -18,7 +18,10 @@ const London: CollectionProps = {
     images: [
         'https://images.unsplash.com/photo-1600503588578-3f2912e12742?ixlib=rb-1.2.1&auto=format&fit=crop&w=2089&q=80',
         'https://images.unsplash.com/photo-1600367797084-02628e943a08?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80',
-        'https://images.unsplash.com/photo-1600362189809-aad4924fbd6a?ixlib=rb-1.2.1&auto=format&fit=crop&w=934&q=80'
+        'https://images.unsplash.com/photo-1600362189809-aad4924fbd6a?ixlib=rb-1.2.1&auto=format&fit=crop&w=934&q=80',
+        'https://images.unsplash.com/photo-1601503300242-273458d6d003?ixlib=rb-1.2.1&auto=format&fit=crop&w=3300&q=80',
+        'https://images.unsplash.com/photo-1601675165519-19a19211406d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjQ3MzMyfQ&auto=format&fit=crop&w=934&q=80',
+        'https://images.unsplash.com/photo-1602147717708-084ef7e39a88?ixlib=rb-1.2.1&auto=format&fit=crop&w=934&q=80'
     ]
 };
 
