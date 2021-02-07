@@ -156,7 +156,7 @@ export const CVSection: React.FunctionComponent<CVSectionProps> = (props: CVSect
                 {props.events.map((event, eventIdx) => (
                     <TimelineItem key={eventIdx}>
                         <TimelineOppositeContent>
-                            <p className="cv-date-range no-margin-top">{event.date}</p>
+                            <strong className="cv-date-range no-margin-top">{event.date}</strong>
                         </TimelineOppositeContent>
                         <TimelineSeparator>
                             <TimelineDot>

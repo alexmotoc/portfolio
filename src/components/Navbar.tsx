@@ -1,5 +1,4 @@
 import * as React from "react";
-import clsx from 'clsx';
 import { useRef } from "react";
 import { motion, useCycle } from "framer-motion";
 

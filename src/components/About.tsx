@@ -40,13 +40,13 @@ export const About: React.FunctionComponent<{}> = () => {
                     <p>I am a strong advocate of attention to detail which is an important part of my philosophy when crafting any new product or experience.
                     This complements my willigness to supplement effort to produce better results.
                     </p>
-                    <p>My purchase of an entry-level DSLR turned me into an <strong>amateur photographer</strong> at the end of my final year of studies.
+                    <p><strong>Street photography</strong> has become a great passion of mine and now I carry my camera with me almost every where I go.
                     The process of learning more about composition and colour grading encouraged me to contribute my early work to <a className="link" href="https://unsplash.com/@alexmotoc">Unsplash</a> where people can use it for free.
-                    My pictures have been seen <strong>65M+</strong> times and downloaded <strong>200K+</strong> times. You can find a selection of my favourite collections in this portfolio.
+                    My pictures have been seen <strong>95M+</strong> times and downloaded <strong>350K+</strong> times. You can find a selection of my favourite collections in this portfolio.
                     Hope you like them!</p>
                     <div className="location-container">
                         <LocationOnIcon className="location-icon"/>
-                        <p>London, UK</p>
+                        <strong>London, UK</strong>
                     </div>
                 </Grid>
                 <Grid className="contact-container" item md={12} xs={12}>

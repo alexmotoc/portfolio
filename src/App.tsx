@@ -6,7 +6,6 @@ import { About } from "./components/About";
 import { CV } from "./components/CV";
 import { Navbar } from "./components/Navbar";
 import { Photography } from "./components/Photography";
-import { Collections, Collection } from './components/Collection';
 import { ScrollToTop } from './components/ScrollToTop';
 
 function App() {
@@ -18,11 +17,6 @@ function App() {
         <Route exact path="/">
           <Home />
         </Route>
-        {Collections.map(item => (
-          <Route exact key={item.title} path={`/photography/${item.title.toLowerCase().split(' ').join('-')}`}>
-            <Collection {...item}/>
-          </Route>
-        ))}
         <Route exact path="/photography">
             <Photography />
         </Route>

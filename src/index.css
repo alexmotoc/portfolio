@@ -1,9 +1,27 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Cookie&display=swap');
 
+@font-face {
+  font-family: Gotham-Bold;
+  src: url("./fonts/Gotham-Bold.otf") format("opentype");
+}
+
+@font-face {
+  font-family: Gotham-Light;
+  src: url("./fonts/Gotham-Light.otf") format("opentype");
+}
+
 body {
-  font-family: 'Playfair Display', serif;
+  font-family: 'Gotham-Bold', serif;
   margin: 0px !important;
+}
+
+p {
+  font-family: 'Gotham-Light';
+}
+
+strong {
+  font-family: 'Gotham-Bold';
 }
 
 code {
@@ -243,4 +261,35 @@ h2 {
 
 .no-margin-top {
   margin-top: 0px !important;
+}
+
+.photograph-landscape {
+  display: block;
+  width: 100%;
+}
+
+.photograph-portrait {
+  display: block;
+  margin: auto;
+  width: 50%;
+}
+
+@media screen and (max-width: 600px) {
+  .photograph-portrait {
+    width: 100%;
+  }
+}
+
+.photograph-landscape:hover {
+  cursor: crosshair;
+}
+
+.photograph-portrait:hover {
+  cursor: crosshair;
+}
+
+.photo-description {
+  opacity: 0.5;
+  text-align: center;
+  margin-top: 25px;
 }
